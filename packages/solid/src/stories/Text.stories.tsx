@@ -1,12 +1,17 @@
 import { Text } from '..'
+import { Meta, StoryObj } from 'storybook-solidjs'
 
-export default {
+const meta = {
   title: 'Text',
   component: Text,
-}
+} satisfies Meta<typeof Text>
 
-export const Primary = {
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const Primary: Story = {
   args: {
-    children: 'Lorem Ipsum Dolor Sit Amet',
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum nulla nec, ultrices libe',
   },
 }
