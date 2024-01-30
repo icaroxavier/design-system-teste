@@ -1,6 +1,7 @@
 
 {
   "name": "@icaroxavier-ds/storybook",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -9,6 +10,11 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/testing-library": "^0.2.2",
     "@icaroxavier-ds/solid": "*",
     "@icaroxavier-ds/ts-config": "*",
     "@icaroxavier-ds/eslint-config": "*",
@@ -18,11 +24,6 @@
     "storybook-solidjs-vite": "^1.0.0-beta.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "eslint-plugin-storybook": "^0.6.15",
-    "@storybook/addon-essentials": "^7.6.10",
-    "@storybook/addon-interactions": "^7.6.10",
-    "@storybook/addon-links": "^7.6.10",
-    "@storybook/blocks": "^7.6.10",
-    "@storybook/testing-library": "^0.2.2"
+    "eslint-plugin-storybook": "^0.6.15"
   }
 }
