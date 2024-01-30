@@ -1,0 +1,42 @@
+{
+  "name": "@icaroxavier-ds/solid",
+  "version": "1.0.0",
+  "description": "Solid package",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --external solid-js",
+    "dev": "tsup src/index.tsx --format cjs,esm --dts --external solid-js --watch",
+    "lint": "eslint src/**/*.ts* --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/testing-library": "^0.2.2",
+    "autoprefixer": "^10.4.17",
+    "eslint-plugin-storybook": "^0.6.15",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "solid-devtools": "^0.29.3",
+    "storybook": "^7.6.10",
+    "storybook-solidjs": "^1.0.0-beta.2",
+    "storybook-solidjs-vite": "^1.0.0-beta.2",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-solid": "^2.9.1"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.12"
+  }
+}
