@@ -1,7 +1,3 @@
 {
-    "extends": [
-        "@icaroxavier-ds/eslint-config",
-        "plugin:storybook/recommended",
-        "plugin:storybook/recommended"
-    ]
+  "extends": ["@icaroxavier-ds/eslint-config"]
 }
